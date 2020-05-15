@@ -1,4 +1,4 @@
-package com.github.kim.boot.util;
+package com.github.fengyuchenglun.util;
 
 /**
  * The type Number utils.
