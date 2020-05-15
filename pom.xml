@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kim.boot</groupId>
+    <artifactId>kim3-boot-util</artifactId>
+    <version>1.0.5</version>
+    <packaging>jar</packaging>
+    <url>https://github.com/fengyuchenglun/kim-boot-util.git</url>
+
+
+    <name>kim3-boot-util</name>
+    <description>kim boot tools.</description>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>duanledexianxianxian</id>
+            <name>duanledexianxianxian</name>
+            <email>fengyuchenglun@foxmail.com</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>https://github.com/fengyuchenglun/kim-boot-util.git</connection>
+        <developerConnection>https://github.com/fengyuchenglun/kim-boot-util.git</developerConnection>
+        <url>https://github.com/fengyuchenglun/kim-boot-util.git</url>
+    </scm>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-forever-maven</id>
+            <name>forever-maven</name>
+            <url>https://api.bintray.com/maven/forever/maven/kim-boot-util/;publish=1</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>3.5.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
