@@ -1,4 +1,4 @@
-package com.kim.boot.util;
+package com.github.kim.boot.util;
 
 /**
  * The type Number utils.
